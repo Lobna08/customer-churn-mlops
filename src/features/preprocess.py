@@ -6,9 +6,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 
-def clean_raw_dataframe(
-    df: pd.DataFrame, id_col: str, target_col: str
-) -> pd.DataFrame:
+def clean_raw_dataframe(df: pd.DataFrame, id_col: str, target_col: str) -> pd.DataFrame:
     """Supprime l'identifiant technique et convertit la cible en binaire.
 
     Args:
