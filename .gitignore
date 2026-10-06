@@ -20,3 +20,6 @@ models/*.pkl
 .coverage
 htmlcov/
 .ipynb_checkpoints/
+
+# Configuration locale de l'editeur
+.vscode/
