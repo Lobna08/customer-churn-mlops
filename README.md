@@ -33,9 +33,12 @@ poetry run python src/models/train.py
 
 Sortie attendue :
 
-ACCURACY : 0.8050
-F1_SCORE : 0.5412
-ROC_AUC : 0.8099
+~~~text
+ACCURACY  : 0.8050
+F1_SCORE  : 0.5412
+ROC_AUC   : 0.8099
+~~~
+
 
 
 Le modèle est sérialisé dans `models/churn_logistic_regression.pkl`. Les chemins
@@ -70,17 +73,19 @@ poetry run pre-commit run --all-files
 
 ## Structure
 
+~~~text
 customer-churn-mlops/
-├── configs/ # Configuration (chemins, hyperparamètres)
+├── configs/            # Configuration (chemins, hyperparamètres)
 ├── data/
-│ ├── raw/ # Données brutes (non versionnées)
-│ └── processed/
-├── models/ # Modèles sérialisés (non versionnés)
+│   ├── raw/            # Données brutes (non versionnées)
+│   └── processed/
+├── models/             # Modèles sérialisés (non versionnés)
 ├── src/
-│ ├── data/ # Ingestion
-│ ├── features/ # Nettoyage et feature engineering
-│ └── models/ # Entraînement et évaluation
-└── tests/ # Tests unitaires
+│   ├── data/           # Ingestion
+│   ├── features/       # Nettoyage et feature engineering
+│   └── models/         # Entraînement et évaluation
+└── tests/              # Tests unitaires
+~~~
 
 
 ## Limites connues
